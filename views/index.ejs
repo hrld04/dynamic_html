@@ -1,0 +1,62 @@
+<html>
+    <header> 
+        <!-- CSS only -->
+        <link rel="stylesheet" href="/css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        
+        <!-- Jquery -->
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+        <!-- submit js -->
+        <script src="/jquery/submit.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+        
+    </header>
+    <body>
+        <!-- Harold -->
+        
+        <div class="container ms-auto mt-5">
+            <div class="row">
+                <!-- This is displaying all the box -->
+                <div class="container mt-5 m-auto d-flex flex-column w-25 h-50 p-3 border rounded shadow bg-light">
+                    <h1 class="ms-1 text-primary m-1 mb-2">Log in</h1>
+                        
+                            <p class=" mt-3">Name</p>
+                            <input class='first_name form-control' type='text' name="user" placeholder='Please type your name'>
+                            <p class="nameErr text-sm-start text-danger"></p>
+                            <p class="mt-1">Password</p>
+                            <input class='password form-control' id="password" name="pass" type='password' placeholder='Please type your password'>
+                            <p class="passErr text-sm-start text-danger"></p>
+                        
+                        
+                            <div class="align-items-left d-flex m-3  ">
+                            <input type='checkbox' id='check' class="m-1" /> Show Password
+                            </div>     
+                            <button class="submit btn btn-primary mt-6  align-items-start">Submit</button>
+                        
+                </div>
+
+                <!-- This feature is add/ delete inputs -->
+                <div class="card text-bg-info mb-3 mt-5 m-5 w-25 bg-light ms-1 h-25 w-50">
+                    <div class="card-header fw-bold text-primary"><h1>Sum</h1></div>
+                        <div class="form-elements input-parent form-group m-3 col-sm-11 ">
+                            <p class="mt-1 mb-1">Input number</p>
+                            <div id="new_row" class="parent after d-flex">
+                                <input id="input_text "class="subject form-control m-1 m-input" type="text">    
+                                <i class="delete bi bi-x-circle text-danger mt-2 ms-2" style="font-size: 20px "></i>
+                            </div> 
+                        </div>
+                        <button class="add_subj btn btn-success m-2 ms-2" type="button">Add</button>
+                        <button class="sum btn btn-primary m-1 ms-2 mb-3" type="button" value="">Sum</button>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        
+    </body>
+</html>
